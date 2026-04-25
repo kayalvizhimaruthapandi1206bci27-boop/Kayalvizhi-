@@ -1,0 +1,19 @@
+#include <stdio.h>  
+
+int main() {
+    
+    // Declaring a character variable 
+    // to store user input
+    char ch;  
+
+    // Prompting user to enter a 
+    // character
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+    // Printing the ASCII value of 
+    // the entered character
+    printf("ASCII value of %c: %d", ch, ch);
+
+    return 0;
+}
