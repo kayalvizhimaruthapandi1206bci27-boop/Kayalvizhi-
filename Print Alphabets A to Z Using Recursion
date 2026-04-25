@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+// Function that prints alphabets recursively
+void printAlpha(char ch) {
+    
+    // Base condition
+    if (ch > 'z')  
+        return;
+        
+    // Print current character
+    printf("%c ", ch);
+    
+    // Recursive call
+    printAlpha(ch + 1);  
+}
+
+int main() {
+    
+    // Function call starts with 'a'
+    printAlpha('a');  
+    return 0;
+}
