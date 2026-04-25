@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    
+    // Declare variables to store two numbers, 
+    // GCD result, and loop counter
+    int num1, num2, gcd, i;
+
+    // Ask user to enter two numbers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Loop from 1 to the smaller of the two numbers
+    // This ensures we check all possible common divisors
+    for (i = 1; i <= num1 && i <= num2; i++) {
+        
+        // Check if 'i' divides both numbers completely
+        if (num1 % i == 0 && num2 % i == 0) {
+            
+            // If yes, update gcd
+            // The largest such 'i' will be the final GCD
+            gcd = i;
+        }
+    }
+
+    // Print the final GCD result
+    printf("GCD of %d and %d is %d\n", num1, num2, gcd);
+
+    return 0;
+}
