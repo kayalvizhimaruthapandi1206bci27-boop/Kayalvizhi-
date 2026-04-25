@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Apply Euclidean Algorithm to find GCD
+    // Continue until the second number becomes 0
+    while (num2 != 0) {
+        
+        // Store current num2 value in temp
+        temp = num2;
+
+        // Update num2 with remainder of num1 divided by num2
+        // This step reduces the problem size
+        num2 = num1 % num2;
+
+        // Update num1 with previous num2 value
+        num1 = temp;
+    }
+
+    printf("GCD of the given numbers is %d\n", num1);
+
+    return 0;
+}
