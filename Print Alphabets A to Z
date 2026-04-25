@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    
+    // Print alphabets from 
+    // 'a' to 'z' using for loop
+    for (char ch = 'a'; ch <= 'z'; ch++) {
+        
+        // Prints current character
+        printf("%c ", ch);  
+    }
+    return 0;
+}
