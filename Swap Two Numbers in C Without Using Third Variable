@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    
+    // Declare integer type variables
+    int a, b;
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    // Use the xor operator to swap two numbers
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+
+    printf("After swapping: a = %d, b = %d", a, b);
+    return 0;
+}
