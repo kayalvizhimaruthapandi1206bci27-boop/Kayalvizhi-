@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <time.h>
+
+// For sleep()
+#include <unistd.h> 
+
+int main() {
+    
+    // Infinite loop to keep clock running
+    while (1) { 
+        time_t now; 
+        struct tm *localTime;
+
+        // Get current system time
+        now = time(NULL);
+        
+        // Convert to local time structure
+        localTime = localtime(&now);     
+
+        // Print time in HH:MM:SS format
+        printf("\r%02d:%02d:%02d", localTime->tm_hour, localTime->tm_min, localTime->tm_sec);
+        
+        // Refresh screen
+        fflush(stdout);
+        
+        
+        // Delay for 1 second
+        sleep(1);
+    }
+    return 0;
+}
