@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // Store name in a string variable
+    char name[] = "Joshi";
+    // Store age in an integer variable
+    int age = 24;
+
+    // Display name and age using printf
+    printf("My name is %s\n", name);
+    printf("My age is %d\n", age);
+
+    return 0;
+}
