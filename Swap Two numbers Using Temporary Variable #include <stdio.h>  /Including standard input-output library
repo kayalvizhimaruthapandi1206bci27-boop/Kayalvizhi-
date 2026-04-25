@@ -1,0 +1,18 @@
+#include <stdio.h>  // Including standard input-output library
+
+int main() {
+    int a, b, temp;  // Declaring variables for two numbers and a temporary variable for swapping
+
+    // Prompting user to enter two numbers
+    printf("Enter two integers: ");
+    scanf("%d %d", &a, &b);
+
+    // Swapping the values using a temporary variable
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Printing the swapped values
+    printf("After swapping: a = %d, b = %d", a, b);
+    return 0;  // Indicating successful program completion
+}
